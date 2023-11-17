@@ -1,3 +1,4 @@
+import 'package:PET_CARE_APP/Views/applointment_screen/appointmentScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'my_pets.dart';
@@ -145,17 +146,17 @@ class ProfileTwo extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 20.0),
+              padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
               child: GestureDetector(
                 onTap: () {
                   Get.to(const MyPets());
                 },
-                child: profile_list(image: Image.asset('assets/images/medico.png'),name: ' Add pets Services '),
+                child: profile_list(image: Image.asset('assets/images/mypet.png'),name: ' Add pets Services '),
               )
 
             ),
             Padding(
-                padding: const EdgeInsets.only(top: 20.0),
+                padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
                 child: GestureDetector(
                   onTap: () {
                     Get.to(const MyPets());
@@ -165,198 +166,42 @@ class ProfileTwo extends StatelessWidget {
 
             ),
             Padding(
-                padding: const EdgeInsets.only(top: 20.0),
+                padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
                 child: GestureDetector(
                   onTap: () {
                     Get.to(const ProfileScreen());
                   },
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: CircleAvatar(
-                          radius: 16, // Set the radius for the CircleAvatar
-                          child: Container(
-                            width: 21, // Set your desired width for the image
-                            height: 21, // Set your desired height for the image
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle, // Ensure the Container is circular
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20), // Half of the width/height to make it circular
-                              child: Image.asset('assets/images/medico.png'),
-                            ),
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 10.0),
-                        child: Text(
-                          'Add pet service',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: 'Encode Sans',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 142.0),
-                        child: Icon(
-                          Icons.arrow_forward_ios,
-                          color: Colors.grey,
-                        ),
-                      ),
-                    ],
-                  ),
+                  child: profile_list(image: Image.asset('assets/images/medico.png'),name: 'Add Pets Services',),
                 )
 
             ),
             Padding(
-                padding: const EdgeInsets.only(top: 20.0),
+                padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
                 child: GestureDetector(
                   onTap: () {
 
                   },
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: CircleAvatar(
-                          radius: 16, // Set the radius for the CircleAvatar
-                          child: Container(
-                            width: 21, // Set your desired width for the image
-                            height: 21, // Set your desired height for the image
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle, // Ensure the Container is circular
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20), // Half of the width/height to make it circular
-                              child: Image.asset('assets/images/announcement.png'),
-                            ),
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text(
-                          'Invite friends',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: 'Encode Sans',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 150.0),
-                        child: Icon(
-                          Icons.arrow_forward_ios,
-                          color: Colors.grey,
-                        ),
-                      ),
-                    ],
-                  ),
+                  child: profile_list(image: Image.asset('assets/images/announcement.png'),name: 'Invite Freinds',),
                 )
 
             ),
             Padding(
-                padding: const EdgeInsets.only(top: 20.0),
+                padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
                 child: GestureDetector(
                   onTap: () {
                     Get.to(const ProfileScreen());
                   },
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: CircleAvatar(
-                          radius: 16, // Set the radius for the CircleAvatar
-                          child: Container(
-                            width: 21, // Set your desired width for the image
-                            height: 21, // Set your desired height for the image
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle, // Ensure the Container is circular
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20), // Half of the width/height to make it circular
-                              child: Image.asset('assets/images/question.png'),
-                            ),
-                          ),
-                        ),
-                      ),
-                     const  Padding(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text(
-                          'Help',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: 'Encode Sans',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                     const Padding(
-                        padding: EdgeInsets.only(left: 213.0),
-                        child: Icon(
-                          Icons.arrow_forward_ios,
-                          color: Colors.grey,
-                        ),
-                      ),
-                    ],
-                  ),
+                  child: profile_list(image: Image.asset('assets/images/question.png'),name: 'Help',)
                 )
 
             ),
             Padding(
-                padding: const EdgeInsets.only(top: 20.0),
+                padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
                 child: GestureDetector(
                   onTap: () {
 
                   },
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: CircleAvatar(
-                          radius: 16, // Set the radius for the CircleAvatar
-                          child: Container(
-                            width: 21, // Set your desired width for the image
-                            height: 21, // Set your desired height for the image
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle, // Ensure the Container is circular
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20), // Half of the width/height to make it circular
-                              child: Image.asset('assets/images/settingsgear.png'),
-                            ),
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 20.0),
-                        child: Text(
-                          'Settings',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontFamily: 'Encode Sans',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 185.0),
-                        child: Icon(
-                          Icons.arrow_forward_ios,
-                          color: Colors.grey,
-                        ),
-                      ),
-                    ],
-                  ),
+                  child: profile_list(image: Image.asset('assets/images/settingsgear.png'),name: 'Settings',)
                 )
 
             ),
@@ -367,46 +212,46 @@ class ProfileTwo extends StatelessWidget {
 
         ),
       ),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   type: BottomNavigationBarType.fixed,
-      //   backgroundColor: Colors.white,
-      //   selectedItemColor: Colors.blueAccent,
-      //   unselectedItemColor: Colors.grey,
-      //   selectedFontSize: 14,
-      //   unselectedFontSize: 14,
-      //   onTap: (int index) {
-      //     // Respond to item press.
-      //     if (index == 3) {
-      //       // Navigate to the ProfileScreen when the "Profile" item is tapped.
-      //       Get.to(const ProfileScreen());
-      //     }
-      //     if (index == 1) {
-      //       Get.to(const AppointmentScreen());
-      //     }
-      //     if (index == 2) {
-      //       Get.to(const ProfileTwo());
-      //     }
-      //   },
-      //
-      //   items: const [
-      //     BottomNavigationBarItem(
-      //       label: 'Search',
-      //       icon: Icon(Icons.search),
-      //     ),
-      //     BottomNavigationBarItem(
-      //       label: 'Appointments',
-      //       icon: Icon(Icons.watch_later_outlined),
-      //     ),
-      //     BottomNavigationBarItem(
-      //       label: 'Explore',
-      //       icon: Icon(Icons.explore_outlined),
-      //     ),
-      //     BottomNavigationBarItem(
-      //       label: 'Profile',
-      //       icon: Icon(Icons.person_outline_outlined),
-      //     ),
-      //   ],
-      // ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
+        selectedItemColor: Colors.blueAccent,
+        unselectedItemColor: Colors.grey,
+        selectedFontSize: 14,
+        unselectedFontSize: 14,
+        onTap: (int index) {
+          // Respond to item press.
+          if (index == 3) {
+            // Navigate to the ProfileScreen when the "Profile" item is tapped.
+            Get.to(const ProfileScreen());
+          }
+          if (index == 1) {
+            Get.to(const Appointments());
+          }
+          if (index == 2) {
+            Get.to(const ProfileTwo());
+          }
+        },
+
+        items: const [
+          BottomNavigationBarItem(
+            label: 'Search',
+            icon: Icon(Icons.search),
+          ),
+          BottomNavigationBarItem(
+            label: 'Appointments',
+            icon: Icon(Icons.watch_later_outlined),
+          ),
+          BottomNavigationBarItem(
+            label: 'Explore',
+            icon: Icon(Icons.explore_outlined),
+          ),
+          BottomNavigationBarItem(
+            label: 'Profile',
+            icon: Icon(Icons.person_outline_outlined),
+          ),
+        ],
+      ),
 
     );
   }
@@ -418,12 +263,17 @@ class profile_list extends StatelessWidget {
   Image image;
   String name;
 
+
   profile_list({required this.image, required this.name});
+
+
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: (){},
+      onTap: (){
+
+      },
       leading: CircleAvatar(child: image,),
       title: Text(name),
       trailing: Icon(Icons.arrow_forward_ios)
