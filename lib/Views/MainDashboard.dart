@@ -1,6 +1,5 @@
 import 'package:PET_CARE_APP/Utils/Utils.dart';
 import 'package:PET_CARE_APP/Views/applointment_screen/appointmentScreen.dart';
-import 'package:PET_CARE_APP/Views/profile_screen/profile.dart';
 import 'package:PET_CARE_APP/Views/profile_screen/profiletwo.dart';
 import 'package:PET_CARE_APP/controllers/MainWrapperController.dart';
 import 'package:flutter/material.dart';
@@ -9,8 +8,6 @@ import 'package:get/get.dart';
 
 class Maindashboard extends StatefulWidget {
   const Maindashboard({super.key});
-
-
 
   @override
   State<Maindashboard> createState() => _MainScreenState();
@@ -21,10 +18,10 @@ class _MainScreenState extends State<Maindashboard> {
   final MainWrapperController controller = Get.put(MainWrapperController());
 
   final List<Widget> _children = [
-    const home_nav(),
-    const Appointments(),
-    const home_nav(),
-    const ProfileTwo(),
+     home_nav(),
+     Appointments(),
+     home_nav(),
+     ProfileTwo(),
   ];
 
   @override

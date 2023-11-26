@@ -1,7 +1,7 @@
 import 'package:PET_CARE_APP/Views/applointment_screen/appointmentScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'my_pets.dart';
+import '../../widget_common/profile_listitems.dart';
 import 'profile.dart';
 
 
@@ -149,7 +149,7 @@ class ProfileTwo extends StatelessWidget {
               padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
               child: GestureDetector(
                 onTap: () {
-                  Get.to(const MyPets());
+
                 },
                 child: profile_list(image: Image.asset('assets/images/mypet.png'),name: ' Add pets Services '),
               )
@@ -159,7 +159,6 @@ class ProfileTwo extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
                 child: GestureDetector(
                   onTap: () {
-                    Get.to(const MyPets());
                   },
                   child: profile_list(image: Image.asset('assets/images/favourite.png'),name: 'My Favourites',),
                 )
@@ -169,7 +168,6 @@ class ProfileTwo extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
                 child: GestureDetector(
                   onTap: () {
-                    Get.to(const ProfileScreen());
                   },
                   child: profile_list(image: Image.asset('assets/images/medico.png'),name: 'Add Pets Services',),
                 )
@@ -189,7 +187,6 @@ class ProfileTwo extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 10.0,left: 10,right: 10),
                 child: GestureDetector(
                   onTap: () {
-                    Get.to(const ProfileScreen());
                   },
                   child: profile_list(image: Image.asset('assets/images/question.png'),name: 'Help',)
                 )
@@ -257,27 +254,5 @@ class ProfileTwo extends StatelessWidget {
   }
 }
 
-class profile_list extends StatelessWidget {
 
-  // add required attributes to the constructor
-  Image image;
-  String name;
-
-
-  profile_list({required this.image, required this.name});
-
-
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      onTap: (){
-
-      },
-      leading: CircleAvatar(child: image,),
-      title: Text(name),
-      trailing: Icon(Icons.arrow_forward_ios)
-    );
-  }
-}
 
